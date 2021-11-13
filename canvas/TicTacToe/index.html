@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Tic Tac Toe
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<ul>
+				<li>Tic Tac Toe</li>
+			</ul>
+		</nav>
+		<div class="gameBorad">
+			<div class="gameBox">
+			<canvas id = "canvas1" onclick="canvasClicked(1)"></canvas>
+			<canvas id = "canvas2" onclick="canvasClicked(2)"></canvas>
+			<canvas id = "canvas3" onclick="canvasClicked(3)"></canvas><br/>
+			<canvas id = "canvas4" onclick="canvasClicked(4)"></canvas>
+			<canvas id = "canvas5" onclick="canvasClicked(5)"></canvas>
+			<canvas id = "canvas6" onclick="canvasClicked(6)"></canvas><br/>
+			<canvas id = "canvas7" onclick="canvasClicked(7)"></canvas>
+			<canvas id = "canvas8" onclick="canvasClicked(8)"></canvas>
+			<canvas id = "canvas9" onclick="canvasClicked(9)"></canvas>
+		</div>
+		<div class="gameInfo">
+        <h1>Welcome to TicTacToe</h1>
+        <div class="turnBox">
+          <span class="info">Turn for X</span>
+          <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        <p id="gameoverText"></p>
+        <div class="imgbox">
+          <img src="excited.gif" alt="" style="display: none;" id="wonImg" />
+        </div>
+    </div>
+		</div>
+	</div>
+
+</body>
+</html>

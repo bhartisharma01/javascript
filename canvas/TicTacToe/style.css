@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+nav{
+	background: #541cdc;
+}
+nav ul li {
+	list-style: none;
+    color: #fff;
+    padding: 12px 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+nav ul li{
+	color: #fff;
+}
+.gameBorad {
+    display: flex;
+    justify-content: space-around;
+    padding: 8em 0;
+    background: #000;
+}
+.gameBox canvas {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 19px #541cdc;
+    padding: 10px;
+    margin: 10px;
+}
+h1 {
+    color: #fff;
+    font-size: 40px;
+}
+.turnBox{
+	margin: 20px 10px;
+	font-size: 20px;
+	color: #fff;
+}
+p#gameoverText {
+    font-size: 31px;
+    margin: 10px 14px;
+    color: #fff;
+}
+button#reset {
+    color: #fff;
+    margin-left: 10px;
+    padding: 5px 18px;
+    background: #541cdc;
+    border: 3px solid #541cdc;
+    font-weight: 600;
+    cursor: pointer;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dice Car Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<!-- header -->
+		<div class="header">
+			<div class="logo">
+				<img class="logo_img" src="source_files/logo-1.png">
+			</div>
+		</div>
+		<!-- //header -->
+		<!-- selections -->
+		<div class="seclections">
+			<div class="selectCar">
+				<h4 class="carsSelect">Select Car</h4>
+				<img id="car1" src="source_files/car-1.png" onclick="SelectCar1()">
+				<img id="car2" src="source_files/car-2.png" onclick="SelectCar2()">
+			</div>
+			<div class="diceBtn">
+					<input type="button" name="" id="diceBtn" onclick="diceRoll();" value="Dice Roll">
+				</div>
+			<div class="control_btn">
+				<input type="button" name="" id="diceBtn" onclick="startNew();" value="Start New">
+				<input type="button" name="" id="diceBtn" onclick="stop();" value="Stop">
+			</div>
+		</div>
+		<!-- game board -->
+		<div class="gameBoard">
+
+			<div class="carTrack">
+				<!-- row1 -->
+				<div class="row1">
+					<div class="box start" id="box0">Start</div>
+					<div class="box" id="box1">1</div>
+					<div class="box" id="box2">2</div>
+					<div class="box" id="box3">3</div>
+					<div class="box" id="box4">4</div>
+				</div>
+				<!-- row2 -->
+				<div class="row2">
+					<div class="box start" id="box18">End</div>
+					<div class="box" id="box5">5</div>
+				</div>
+
+				<!-- row3 -->
+				<div class="row3">
+					<div class="box" id="box17">17</div>
+					<div class="box" id="box6">6</div>
+				</div>
+
+				<!-- row4 -->
+				<div class="row4">
+					<div class="box" id="box16">16</div>
+					<div class="box" id="box7">7</div>
+				</div>
+
+				<!-- row5 -->
+				<div class="row5">
+					<div class="box" id="box15">15</div>
+					<div class="box" id="box8">8</div>
+				</div>
+
+				<!-- row6 -->
+				<div class="row6">
+					<div class="box" id="box14">14</div>
+					<div class="box" id="box9">9</div>
+				</div>
+
+				<!-- row7 -->
+				<div class="row7">
+					<div class="box" id="box10"><img class="bonus_img" src="source_files/bonus.png" id="bonus_img">10</div>
+					<div class="box" id="box11">11</div>
+					<div class="box" id="box12">12</div>
+					<div class="box" id="box13">13</div>
+				
+				</div>
+				<div class="diceRoll">
+					<img src="source_files/dice-2.png" class="dice_img" id="dice">
+				</div>
+				
+			</div>
+			<div class="dashBoard">
+				<h2 class="dashHeading">Dashboard</h2>
+				<h3 class="dispHeading">No. on the Dice</h3>
+				<p id="dispNo"></p>
+				<h3 class="dispHeading">Total no. of Dice rolled</h3>
+				<p id="count"></p>
+				<h3 class="dispHeading">Points</h3>
+				<p id="points"></p>
+			</div>
+		</div>
+		<!-- //game board -->
+		
+	</div>
+</body>
+</html>

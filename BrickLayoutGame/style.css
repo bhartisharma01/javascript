@@ -1,0 +1,141 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+.header {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 3px 30px 0 6px;
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+}
+#helpBtn {
+    background: #fdd50b;
+    border: none;
+    padding: 10px 31px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    border-radius: 5px;
+    cursor: help;
+}
+img.logo_img {
+    width: 150px;
+}
+.control_btn img {
+    width: 40px;
+}
+.control_btn, .scores {
+    text-align: end;
+    padding: 6px 40px;
+}
+span.scoredisp {
+    color: #0fbcf6;
+    font-weight: 800;
+    font-size: 28px;
+}
+span#points {
+    font-size: 22px;
+    font-weight: 800;
+    color: #42dc26;
+}
+
+/*index.html*/
+.playGame {
+    display: block;
+    text-align: center;
+    width: 960px;
+    height: 600px;
+    position: absolute;
+    left: 17%;
+    top: 58%;
+}
+.playBtn{
+   margin-top: 20px;
+}
+.playBtn a {
+    border-radius: 5px;
+    background: green;
+    padding: 11px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+img#gameBall {
+    bottom: 50px;
+    left: 4%;
+    width: 35px;
+    height: auto;
+    position: relative
+
+}
+
+@keyframes playBtn{
+  0%{
+        transform: scale(0.5);
+   }
+   100%{
+        transform:scale(0.8);
+   } 
+}
+@keyframes ball{
+   
+   0%{
+        transform: scale(1.0);
+   }
+   100%{
+        transform: scale(1.5);
+   }
+}
+/*instructions*/
+ol#help_ul {
+    box-shadow: 0 0 10px #b9b9b9;
+    padding: 20px 39px;
+    position: absolute;
+    width: 24%;
+    height: auto;
+    right: 2%;
+    border-radius: 10px;
+/*    margin-top: 10px;*/
+}
+#closeBtn{
+    list-style: none;
+    margin-top: 30 px;
+    background: green;
+    border: navajowhite;
+    padding: 5px 14px;
+    color: #fff;
+    font-weight: 700;
+}
+li.help_li_last {
+    list-style: none;
+    text-align: end;
+    margin-top: 30px;
+}
+@keyframes inst{
+   0%{
+      transform: translateY(8px);
+   }
+   50%{
+      transform: translateY(10px);
+   }
+   100%{
+      transform: translateY(12px);
+   }
+}
+.help_ul{
+    box-shadow: 0 0 10px #b9b9b9;
+    padding: 20px 39px;
+    /* position: absolute; */
+    width: 50%;
+    height: 300px;
+    right: 2%;
+    border-radius: 10px;
+
+    margin: 50px auto;
+}
+h1.heading {
+    text-align: center;
+    margin-top: 30px;
+}

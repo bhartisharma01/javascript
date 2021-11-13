@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dice Car Game for Kids</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="selectCar">
+					<h4 class="carsSelect">Select Car</h4>
+						<img id="car1" src="images/car1.png" onclick="SelectCar1()">
+						<img id="car2" src="images/car2.png" onclick="SelectCar2()">
+
+					
+				</div>
+		<div class="car_game">
+
+			<div class="game_board">
+				<div class="game_row1">
+					<div class="start" id="">Start</div>
+					<div class="count" id="">1</div>
+					<div class="count" id="">2</div>
+					<div class="count" id="">3</div>
+					<div class="count" id="">4</div>
+					<div class="count" id="">5</div>
+				</div>
+
+			
+
+				<div class="game_row2">
+					<div class="count" id="">End</div>
+					<div class="count1" id="">6</div>
+				</div>
+
+
+				<div class="game_row3">
+					<div class="count" id="">17</div>
+					<div class="count1">7</div>
+				</div>
+
+				<div class="game_row4">
+					<div class="count1" id="">16</div>
+					<div class="count1" id="">8</div>
+				</div>
+
+				<div class="game_row5">
+					<div class="count1" id="">15</div>
+					<div class="count1" id="">9</div>
+				</div>
+
+				<div class="game_row6">
+					<div class="start" id="">14</div>
+					<div class="count" id="">13</div>
+					<div class="count" id=""></div>
+					<div class="count" id="">12</div>
+					<div class="count" id="">11</div>
+					<div class="count" id="">10</div>
+				</div>
+
+					<div class="dice_img">
+					<img id="dice" src="images/dice1.png">
+				</div>
+
+				<form class="control_btns">
+					<input  type="button" value="Dice Roll" onclick="diceRoll()">
+					<input type="button" name="play" id="play" onclick="playNow()" value="Play">
+				</form>
+				
+
+			</div>
+			<div class="score_board">
+				<div class="scores">
+					<h4 id="dispDiceNo">No. on Dice</h4>
+					<p id="diceNumber"></p>
+					<br>
+					<h4 id="noOutComes">Count of Dice Roll</h4>
+
+						<p id="dispOutComes"></p>
+					
+					<h4 id="score">
+						<ul>
+							<li id="scoresList"></li>
+						</ul>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

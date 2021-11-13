@@ -1,0 +1,93 @@
+.game_row1, .game_row6 {
+    display: flex;
+}
+.start, .count {
+    border: 1px solid red;
+/*    margin: 20px;*/
+   width: 60px;
+    height: 60px;
+    padding: 52px 32px 0px 32px;
+    text-align: center;
+
+}
+.car_game {
+    display: flex;
+}
+.count1, .count2 {
+    border: 1px solid red;
+/*    margin: 20px;*/
+  width: 60px;
+    height: 60px;
+    padding: 52px 32px 0px 32px;
+    text-align: center;
+}
+.game_row2, .game_row3, .game_row4,.game_row5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dice_img img {
+    left: 24%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 54%;
+    animation: diceAni 3s infinite;
+
+}
+@keyframes diceAni{
+    0%{
+        transform: translateX(10px) translateY(10px);
+    }
+    50%{
+        transform: translateX(20px) translateY(20px);
+    }
+    100%{
+transform: translateX(0px) translateY(0px);
+    }
+}
+/*#dispDiceNo{
+    display: none;
+}*/
+.selectCar img{
+    width: 100px;
+    height: 50px;
+}
+@keyframes car1{
+    0%{
+       transform: translateX(0px) translateY(30px);
+       
+    }
+    25%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(1.0);
+    }
+    100%{
+transform: translateX(0px) translateY(88px);
+
+
+    }
+}
+
+@keyframes car2{
+    0%{
+       transform: translateX(0px) translateY(30px);
+       
+    }
+    25%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(1.0);
+    }
+    100%{
+
+transform: translateX(-92px) translateY(88px);
+
+    }
+}
+
+
+

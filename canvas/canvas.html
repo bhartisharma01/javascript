@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Canvas</title>
+</head>
+<body>
+	<canvas id="can1" width="300" height="300" style="border:1px solid #000"></canvas>
+	<script type="text/javascript">
+		var canvas=document.getElementById('can1');
+		// canvas.width=window.innerWidth;
+		
+		// var makeRect=canvas.getContext('2d');
+		// makeRect.fillStyle="#000";
+		// makeRect.fillRect(0,0,200,100);
+		// var drawLine=canvas.getContext('2d');
+		// // drawLine.fillStyle='#FF0000';
+		// drawLine.moveTo(0,0);
+		// drawLine.lineTo(300,300);
+
+		// drawLine.stroke();
+		// var drawCircle=canvas.getContext('2d');
+		// drawCircle.beginPath();
+		// drawCircle.arc(100,100,80,0,2*Math.PI);
+		// drawCircle.stroke();
+		// var writeText=canvas.getContext('2d');
+		// writeText.font='40px Arial';
+		// writeText.fillText("Hello World", 100,150);
+		// writeText.strokeText('Hello World',10,50);
+
+		var drawTriangle=canvas.getContext('2d');
+		drawTriangle.beginPath();
+		drawTriangle.moveTo(50,50);
+		drawTriangle.lineTo(150,50);
+				drawTriangle.lineTo(100,200);
+		
+		// drawTriangle.lineTo(50,50);
+		drawTriangle.closePath();
+		// drawTriangle.stroke();
+		drawTriangle.fillStyle='orange';
+		drawTriangle.fill();
+
+	</script>
+</body>
+</html>

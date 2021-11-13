@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Breakout 2D Game | Game Screen</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<img class="logo_img" src="images/breakOutLogo.png">
+			</div>
+			<div class="help">
+				<button id="helpBtn" onclick="dispInst()">Help</button>
+				<ol id="help_ul" style="display: none;">
+					<li class="help_li">
+						On each tile break: 10 points
+					</li>
+					<li class="help_li">
+						The player is only able to play till all the tiles are break.
+					</li>
+					<li class="help_li">
+						Game can be pause on click play/pause or by pressing p key
+					</li>
+					<li class="help_li_last">
+						<input type="button" name="" value="Ok" onclick="closeInst()" id="closeBtn">
+					</li>
+				</ol>
+			</div>
+
+		</div>
+		<!-- pause/play -->
+		<div class="control_btn">
+				<img id="play_btn" src="images/play.png" onclick="playGame();">
+				<img id="pause_btn" src="images/pause.png" onclick="pause();">
+		</div>
+		<!-- scores -->
+		<div class="scores" id="scores">
+			<span class="scoredisp">Scores:</span>
+			<span id="points">100</span>
+		</div>
+		<!-- brickslayout -->
+		<!-- <canvas id="ballArea" width="960"></canvas> -->
+		<div class="row1">
+			<canvas id="row1Brick1" width="139" height="32"></canvas>
+			<canvas id="row1Brick2" width="139" height="32"></canvas>
+			<canvas id="row1Brick3" width="139" height="32"></canvas>
+			<canvas id="row1Brick4" width="139" height="32"></canvas>
+			<canvas id="row1Brick5" width="139" height="32"></canvas>
+			<canvas id="row1Brick6" width="139" height="32"></canvas>
+		</div>
+
+		<!-- row2 -->
+
+		<div class="row2">
+			<canvas id="row1Brick7" width="139" height="32"></canvas>
+			<canvas id="row1Brick8" width="139" height="32"></canvas>
+			<canvas id="row1Brick9" width="139" height="32"></canvas>
+			<canvas id="row1Brick10" width="139" height="32"></canvas>
+			<canvas id="row1Brick11" width="139" height="32"></canvas>
+			<canvas id="row1Brick12" width="139" height="32"></canvas>
+		</div>
+
+
+		<!-- row3 -->
+
+		<div class="row3">
+			<canvas id="row1Brick13" width="139" height="32"></canvas>
+			<canvas id="row1Brick14" width="139" height="32"></canvas>
+			<canvas id="row1Brick15" width="139" height="32"></canvas>
+			<canvas id="row1Brick16" width="139" height="32"></canvas>
+			<canvas id="row1Brick17" width="139" height="32"></canvas>
+			<canvas id="row1Brick18" width="139" height="32"></canvas>
+		</div>
+
+		<!-- row4-->
+
+		<div class="row1">
+			<canvas id="row1Brick19" width="139" height="32"></canvas>
+			<canvas id="row1Brick20" width="139" height="32"></canvas>
+			<canvas id="row1Brick21" width="139" height="32"></canvas>
+			<canvas id="row1Brick22" width="139" height="32"></canvas>
+			<canvas id="row1Brick23" width="139" height="32"></canvas>
+			<canvas id="row1Brick24" width="139" height="32"></canvas>
+		</div>
+
+<!-- row5-->
+		<div class="row1">
+			<canvas id="row1Brick25" width="139" height="32"></canvas>
+			<canvas id="row1Brick26" width="139" height="32"></canvas>
+			<canvas id="row1Brick27" width="139" height="32"></canvas>
+			<canvas id="row1Brick28" width="139" height="32"></canvas>
+			<canvas id="row1Brick29" width="139" height="32"></canvas>
+			<canvas id="row1Brick30" width="139" height="32"></canvas>
+		</div>
+	
+
+		<div class="ball_slab">
+			<!-- <canvas id="ball_slab" width="139" height="20"></canvas> -->
+			<canvas id="canvas" width="960" height="600"></canvas>
+			<canvas id="gameBoardArea" width="960"></canvas>
+
+			<img id="source" src="images/Gameslab.png" style="display:none;">
+
+		</div>
+		<img id="gameBall" src="images/ball.png">
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

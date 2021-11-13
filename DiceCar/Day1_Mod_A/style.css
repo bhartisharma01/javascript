@@ -1,0 +1,245 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial, sans-serif;
+}
+/*header*/
+.header {
+    background: #000;
+}
+img.logo_img {
+    width: 59px;
+}
+.logo {
+    padding: 6px 20px 3px 20px;
+}
+/*gameboard - cartrack*/
+.gameBoard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.row1, .row2,.row3, .row4, .row5, .row6 {
+    display: flex;
+    justify-content: space-between;
+}
+.row7 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.box {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+#box10{
+	width: 320px;
+	display: flex;
+    justify-content: space-evenly;
+}
+/*box background*/
+.row1 .box:nth-child(odd),
+.row7 .box:nth-child(odd) {
+    background: #e50e62;
+}
+.row1 .box:nth-child(even),
+.row7 .box:nth-child(even) {
+    background: #007cc2;
+}
+.row2 .box:nth-child(odd),
+.row3 .box:nth-child(even),
+.row4 .box:nth-child(odd),
+.row5 .box:nth-child(even),
+.row6 .box:nth-child(odd) {
+    background: #f8731f;
+}
+.row2 .box:nth-child(even),
+.row3 .box:nth-child(odd),
+.row4 .box:nth-child(even),
+.row5 .box:nth-child(odd),
+.row6 .box:nth-child(even) {
+    background: #fff355;
+}
+img.bonus_img {
+    width: 98px;
+    animation: bonusImg 3s linear infinite;
+}
+@keyframes bonusImg{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+/*dashboard*/
+.dashBoard {
+    padding: 20px;
+    width: 100%;
+    margin-left: 60px;
+    box-shadow: 0 0 10px #eaf7ff;
+    background: #eaf7ff;
+    border: 1px solid #007cc2;
+}
+h2.dashHeading {
+    font-size: 30px;
+    color: #003f7f;
+    text-align: center;
+}
+h3.dispHeading {
+    font-size: 19px;
+    margin: 20px 10px;
+}
+p#dispNo, p#count, p#points{
+    margin: 5px 10px 20px 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #862ec8;
+}
+.diceRoll {
+    position: absolute;
+    top: 85%;
+    left: 29%;
+}
+img.dice_img {
+    width: 70px;
+  animation: diceRoll 3s linear infinite;
+}
+@keyframes diceRoll{
+	100%{
+		transform: rotate3d(0, 0, 1, 360deg);
+	}
+}
+.diceBtn {
+    margin-top: 30px;
+    text-align: center;
+}
+input#diceBtn {
+    background: orange;
+    padding: 10px 16px;
+    border: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.control_btn {
+    margin: 30px;
+    text-align: right;
+}
+@keyframes car1{
+    0%{
+       transform: translateX(0px) translateY(30px);
+       
+    }
+    25%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(1.0);
+    }
+    100%{
+transform: translateX(10px) translateY(143px);
+
+
+    }
+}
+/*square1*/
+@keyframes car1Move{
+    0%{
+transform: translateX(180px) translateY(143px);
+
+
+    } 50%{
+transform: translateX(180px) translateY(143px);
+
+
+    }
+    100%{
+transform: translateX(180px) translateY(143px);
+
+
+    }
+}
+@keyframes car2Move{
+   
+    0%{
+transform: translateX(350px) translateY(143px);
+
+
+    } 50%{
+transform: translateX(350px) translateY(143px);
+
+
+    }
+    100%{
+transform: translateX(350px) translateY(143px);
+
+
+    }
+}
+
+@keyframes car2{
+    0%{
+       transform: translateX(0px) translateY(30px);
+       
+    }
+    25%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(1.0);
+    }
+    100%{
+
+transform: translateX(-124px) translateY(143px);
+
+    }
+}
+@keyframes carb2{
+   
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1.0);
+    }
+     100%{
+       transform: translateX(0px) translateY(0px);
+       
+    }
+   
+}
+
+@keyframes carb1{
+   
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1.0);
+    }
+     100%{
+       transform: translateX(0px) translateY(0px);
+       
+    }
+   
+}
+.seclections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selectCar {
+    margin: 30px;
+}
+.selectCar img {
+    width: 130px;
+
+}
